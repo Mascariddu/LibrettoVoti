@@ -1,26 +1,26 @@
-package application;
+package it.polito.tdp.libretto;
 
 import java.time.*;
 
 public class Voto {
 	
-	private int voto;
+	private int punteggio;
 	private String corso;
 	private LocalDate data;
 	
 	public Voto(int voto, String corso, LocalDate data) {
 		super();
-		this.voto = voto;
+		this.punteggio = voto;
 		this.corso = corso;
 		this.data = data;
 	}
 	
-	public int getVoto() {
-		return voto;
+	public int getPunteggio() {
+		return punteggio;
 	}
 	
 	public void setVoto(int voto) {
-		this.voto = voto;
+		this.punteggio = voto;
 	}
 	
 	public String getCorso() {
@@ -37,5 +37,9 @@ public class Voto {
 	
 	public void setData(LocalDate data) {
 		this.data = data;
+	}
+	
+	public String stampa() {
+		return "Punteggio: "+this.punteggio+", corso: "+this.corso+", data: "+this.data+"\n";
 	}
 }
