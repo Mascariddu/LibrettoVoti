@@ -39,13 +39,16 @@ public class TestLibretto {
 		
 		//Punto 4
 		Voto v= new Voto(28,"Sistemi di produzione", LocalDate.of(2018, 6, 23));
-		l.add(new Voto(28,"Sistemi di produzione", LocalDate.of(2018, 6, 23)));
+		l.add(v);
 		System.out.println(l.esistenza(v));
 		
 		//Punto 5
 		Voto voto= new Voto(28,"Economia", LocalDate.of(2018, 6, 23));
-		l.add(new Voto(28,"Sistemi di produzione", LocalDate.of(2018, 6, 23)));
+		l.add(voto);
 		System.out.println(l.conflitto(voto));
+	
+		//Punto 6
+		
 	}
 
 }

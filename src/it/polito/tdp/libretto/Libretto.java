@@ -50,10 +50,19 @@ public class Libretto {
 	
 	public boolean esistenza(Voto v) {
 		for(Voto vot: voti) {
-			if(vot.getCorso().equals(v.getCorso()))
+			if(vot.getCorso().equals(v.getCorso()) && vot.getPunteggio() == v.getPunteggio())
 				return true;
 		}
 		return false;
 	}
 	
+	public boolean conflitto(Voto v) {
+		for(Voto vot: voti) {
+			if(vot.getCorso().equals(v.getCorso()) && vot.getPunteggio() != v.getPunteggio())
+				return true;
+		}
+		return false;
+	}
+	
+	public void add2
 }
